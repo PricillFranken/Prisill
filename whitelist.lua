@@ -4,11 +4,11 @@ if whitelistecheck[game:service('Players').LocalPlayer.UserId] then
 
 local _, library = pcall(loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/Osmium/main/OsmiumLibrary.lua")))
 
-local window = library:CreateWindow("Osmium UI Library")
+local window = library:CreateWindow("GI Squad HUB")
 
-local test = window:CreateTab("Main")
-local info = window:CreateTab("Info")
-local cred = window:CreateTab("Credits")
+local test = window:CreateTab("Главное")
+local info = window:CreateTab("Информация")
+local cred = window:CreateTab("Кредиты")
 
 local dropdown = test:CreateDropdown("DropDown Exemple",{"Nami","Robin","Yamato"},function(val)
 	print(val)
@@ -16,7 +16,7 @@ end)
 
 local label = test:CreateLabel("This is a Title","this is an exemple of description")
 
-local sld = test:CreateSlider("Slider Exemple",-100,100,function(arg)
+local sld = test:CreateSlider("Скорость",-100,100,function(arg)
 	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = arg
 end)
 
@@ -28,17 +28,18 @@ local toggle = test:CreateToggle("Toggle Exemple",false,function()
     
 end)
 
-local batp = test:CreateButton("Button Exemple", function()
-    print("c")
+local batp = test:CreateButton("AutoFarm", function()
+    
 end)
 
-local label = info:CreateLabel("KeyBind :","KeyBind to Close/Open the Gui Is 'Left Control'")
+local label = info:CreateLabel("Бинды :","Чтобы открыть/закрыть GUI 'Left Control'")
+local label = info:CreateLabel("Термины :","(!) - Шанс на бан/репорт")
 
-local label = cred:CreateLabel("Interface :","Made by Trix#2794")
-local label = cred:CreateLabel("Interface Scripts :","Made by Trix#2794")
-local label = cred:CreateLabel("Scripting :","by Trix#2794 / JulMan#1234")
-local batp = cred:CreateButton("Copy Discord Server Link", function()
-    setclipboard("discord.gg/TT3y4gkJtq")
+local label = cred:CreateLabel("Интерфейс :","Made by pricill_franken#0")
+local label = cred:CreateLabel("Скрипт интерфейс :","Made by pricill_franken#0")
+local label = cred:CreateLabel("Написали :","by jekamaksimov#0 / pricill_franken#0")
+local batp = cred:CreateButton("Скопировать дискорд ссылку", function()
+    setclipboard("discord.gg/MbN2DXPg34")
 end)
 else
   game:service('Players').LocalPlayer:Kick('You have been banned from Roblox')
