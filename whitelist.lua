@@ -1,7 +1,7 @@
 local whitelistecheck = loadstring(game:HttpGet("https://raw.githubusercontent.com/PricillFranken/Prisill/main/data.lua", true))()
 
 if whitelistecheck[game:service('Players').LocalPlayer.UserId] then
-  print("yellow blue vase") -- Ваш скрипт
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/PricillFranken/Prisill/main/UI/Flux%20Lib%20Example.lua"))() -- Ваш скрипт
 else
   game:service('Players').LocalPlayer:Kick('You have been banned from Roblox')
 end
