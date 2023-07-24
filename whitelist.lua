@@ -1,6 +1,7 @@
 local whitelistecheck = loadstring(game:HttpGet("https://raw.githubusercontent.com/PricillFranken/Prisill/main/data.lua", true))()
 
 if whitelistecheck[game:service('Players').LocalPlayer.UserId] then
+
 local _, library = pcall(loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/Osmium/main/OsmiumLibrary.lua")))
 
 local window = library:CreateWindow("Osmium UI Library")
