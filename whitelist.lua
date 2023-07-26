@@ -32,6 +32,11 @@ local batp = test:CreateButton("AutoFarm", function()
     
 end)
 
+local batp = test:CreateButton("AutoFarm", function()
+    
+end)
+
+
 local label = info:CreateLabel("Бинды :","Чтобы открыть/закрыть GUI 'Left Control'")
 local label = info:CreateLabel("Термины :","(!) - Шанс на бан/репорт")
 
